@@ -1,0 +1,31 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    height: 200px;
+    background-color: rgb(67, 194, 67);
+}
+
+header > nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+header > nav > button {
+    border-radius: 15%;
+    background-color: rgb(2, 85, 2);
+    color: white;
+    font-weight: bold;
+    padding: 10px 5px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+header + div {
+    border: black solid 1px;
+    height: 200px;
+}
