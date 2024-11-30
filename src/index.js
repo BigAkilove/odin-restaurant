@@ -1,21 +1,23 @@
 import './styles.css'
-import { createHomePage } from './home'
+import { createHomePage } from './home';
+import {createMenu} from './menu'
+import {createAbout} from './about'
 
 createHomePage();
 
 document.addEventListener('click', (event) => {
-    console.log(event.target.innerText);
     const content = document.querySelector('#content')
     content.innerHTML= ''
+
     switch(event.target.innerText) {
         case('Home') :
-            console.log(1);
             createHomePage();
             break;
         case('Menu') :
-            console.log(2);
+            createMenu(4);
             break;
         case('About') :
-            console.log(3);
+            createAbout();
+            break;
     }
 })

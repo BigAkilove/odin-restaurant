@@ -56,3 +56,31 @@ header + div {
     margin-top: 50px;
     font-style: italic;
 }
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+    font-size: 15px;
+}
+
+.about-container {
+    display: flex;
+    gap: 100px;
+}
+
+.about-image-container {
+    height: auto;
+    height: 100%;
+    width: 100%;
+}
+
+.about-image {
+    object-fit: contain;
+
+}
+
+.about-description {
+    font-weight: bold;
+}
