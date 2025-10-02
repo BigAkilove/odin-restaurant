@@ -1,3 +1,4 @@
+import akiImage from './aki-image.jpeg'
 export function createAbout() {
 
 const content = document.querySelector('#content');
@@ -9,8 +10,8 @@ const aboutImageContainer = document.createElement('div');
 aboutImageContainer.classList.add('about-image-container');
 
 const aboutImage = document.createElement('img');
-aboutImage.setAttribute('src', 'aki-image.jpeg')
-aboutImage.classList.add('about-image');
+aboutImage.src = akiImage;
+aboutImage.classList.add('about-image'); 
 
 const aboutDescription = document.createElement('div');
 aboutDescription.classList.add('about-description');
@@ -21,13 +22,4 @@ content.appendChild(aboutContainer);
 aboutContainer.appendChild(aboutImageContainer);
 aboutContainer.appendChild(aboutDescription);
 aboutImageContainer.appendChild(aboutImage);
-
 }
-
-
-
-/* <div class="about-container">
-        <div class="about-image-container">
-            <img src="" alt=""></div>
-        <div class="about-description"></div>
-</div> */

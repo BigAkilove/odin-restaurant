@@ -1,5 +1,6 @@
+import hajimeImage from './summer-hajime.png';
 export function createHomePage() {
-    const content = document.querySelector('#content')
+    const content = document.querySelector('#content');
 
     const descriptionAndImagesContainer = document.createElement('div');
     descriptionAndImagesContainer.classList.add('description-and-images');
@@ -15,7 +16,8 @@ export function createHomePage() {
     const imageContainer = document.createElement('div');
     imageContainer.classList.add('example-images-container');
 
-    const exampleImage = document.createElement('div');
+    const exampleImage = document.createElement('img');
+    exampleImage.src = hajimeImage;
     exampleImage.classList.add('example-image');
 
     descriptionAndImagesContainer.appendChild(imageContainer);
